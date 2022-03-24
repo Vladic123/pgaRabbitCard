@@ -33,5 +33,10 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
           cache: 'npm'
+<<<<<<< HEAD
         -run: npm ci
         -run: npm start
+=======
+      - run: npm ci
+      - run: npm start
+>>>>>>> 62f44daad823c22157b20958388d28d590b2947b
