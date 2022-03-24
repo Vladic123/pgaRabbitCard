@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x,14.x,16.x]
+        node-version: [16.x]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -33,10 +33,6 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
           cache: 'npm'
-<<<<<<< HEAD
         -run: npm ci
         -run: npm start
-=======
-      - run: npm ci
-      - run: npm start
->>>>>>> 62f44daad823c22157b20958388d28d590b2947b
+
